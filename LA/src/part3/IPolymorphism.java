@@ -10,5 +10,6 @@ package part3;
  * @author DELL
  */
 public interface IPolymorphism {
-    
+    int f1(String f1);
+    void f2(String f2);
 }
