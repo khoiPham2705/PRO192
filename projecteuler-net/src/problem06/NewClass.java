@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problem1;
+package problem06;
 
 /**
  *
@@ -12,11 +12,17 @@ package problem1;
 public class NewClass {
     public static void main(String[] agrs){
         int sum = 0;
-        for (int i = 1; i < 1000;i++){
-            if (i % 3 == 0 || i % 5 == 0){
-                sum += i;
-            }
+        int sum2 = 0;
+        
+        for (int i = 0 ; i <= 100 ; i++){
+            sum += i*i;
         }
-        System.out.println(sum);
+        for(int i = 0 ; i<= 100 ; i++){
+            sum2 += i;
+        }
+        sum2 = sum2 * sum2;
+        System.out.println(sum2 - sum);
+    
+    
     }
 }
