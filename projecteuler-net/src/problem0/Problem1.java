@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problem01;
+package problem0;
 
 /**
  *
  * @author DELL
  */
-public class NewClass {
+public class Problem1 {
     public static void main(String[] agrs){
         int sum = 0;
         for (int i = 1; i < 1000;i++){

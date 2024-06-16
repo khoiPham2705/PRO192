@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problem04;
+package problem0;
 
 /**
  *
  * @author DELL
  */
-public class NewClass {
+public class Problem4 {
     public static void main(String[] agrs){
         int max = 0;
         
@@ -52,5 +52,3 @@ public class NewClass {
        return false;
    }
 }
-
-

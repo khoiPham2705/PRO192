@@ -1,7 +1,15 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package problem0;
 
-package problem08;
-
-public class NewClass {
+/**
+ *
+ * @author DELL
+ */
+public class Problem8 {
     public static void main(String[] args){
         String a = "73167176531330624919225119674426574742355349194934"
                  + "96983520312774506326239578318016984801869478851843"

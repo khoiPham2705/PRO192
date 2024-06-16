@@ -3,30 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package problem03;
+package problem1;
 
 /**
  *
  * @author DELL
  */
-public class NewClass {
+public class Problem10 {
     public static void main(String[] agrs){
-        long  a = 600851475143L;
-        int i = 2;
-        while ( a > 1){
-            
+        long sum = 0;
+        for(long i = 1 ; i <= 2000000;i++){
             if ( isPrime(i) == true){
-                if (a % i == 0){
-                    System.out.println(i);
-                    a /= i;
-                }
+                
+                sum += i;
+                
             }
-            i++;
         }
-        
-    
-}
-    public static boolean isPrime(int n){
+        System.out.println("sum:" + sum);
+    }
+    public static boolean isPrime(long n){
         if ( n <= 1){
             return false;
         }
