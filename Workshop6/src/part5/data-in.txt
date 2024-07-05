@@ -1,0 +1,8 @@
+B001-Prentice Hal-Computer Organization and Architecture-2012
+B002-Prentice Hall-First Course in Database Systems-2008
+B003-Wiley-Data Structures and Algorithms in Java-2014
+B004-Pearson-Core Java 1: Fundamentals-2018
+B005-Pearson-Core Java 2: Advanced features-2019
+
+
+
