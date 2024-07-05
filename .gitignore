@@ -22,3 +22,14 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/LAB5/JavaApplication29/nbproject/private/
+/LA/nbproject/private/
+/LA/build/
+/projecteuler/nbproject/private/
+/projecteuler-net/nbproject/private/
+/projecteuler-net/build/
+/Workshop6/nbproject/private/
+/Workshop6/build/
+/Q1/nbproject/private/
+/Q1a/nbproject/private/
+/PRO_given[[]1]/nbproject/private/
