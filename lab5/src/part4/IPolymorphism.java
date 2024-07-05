@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package part1;
+package lab5.pkg4;
 
 /**
  *
  * @author DELL
  */
 public interface IPolymorphism {
-    int f1(String str);
-    String f2(String str);
+    void f1(String str);
+    int f2(String str);
 }

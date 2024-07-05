@@ -3,45 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package part1;
+package part3;
 
 /**
  *
  * @author DELL
  */
 public class MyPolymorphism implements IPolymorphism {
+    
     @Override
     public int f1(String str){
+        String[] tmp = str.split(" ");
         int count = 0;
-        String[] tmp = str.split("\\s+");
         for (String x : tmp){
-            if (containsOddDigit(x)){
-                count++;
+            if ( wordMoreThan2digit(x) == true){
+                count ++;
             }
         }
         return count;
     }
-    @Override 
-    public String f2(String str){
-        StringBuilder result = new StringBuilder();
+    
+    @Override
+    public void f2(String str){
         String[] tmp = str.split(" ");
+        StringBuilder result = new StringBuilder();
         for ( String x : tmp){
-            if (wordMoreThan2digit(x) == true){
-                result.append("XYZ ");
-            } 
+            if ( containsEvenDigit(x) == true ) {
+                result.append("ABC ");
+            }
             else{
-                result.append(x+" ");
+                result.append(x + " ");
             }
         }
-        return result.toString().trim();
-    }
-    private static boolean containsOddDigit(String word) {
-    for (int i = 0; i < word.length(); i++) {
-        if (Character.isDigit(word.charAt(i)) && Integer.parseInt(String.valueOf(word.charAt(i))) % 2 != 0) {
-            return true;
-        }
-    }
-    return false;
+        System.out.println(result);
     }
     private static boolean wordMoreThan2digit(String word){
         int digitCount = 0;
@@ -55,6 +49,13 @@ public class MyPolymorphism implements IPolymorphism {
     }
     return false;
     }
-    
+    private static boolean containsEvenDigit(String word) {
+    for (int i = 0; i < word.length(); i++) {
+        if (Character.isDigit(word.charAt(i)) && Integer.parseInt(String.valueOf(word.charAt(i))) % 2 != 1) {
+            return true;
+        }
+    }
+    return false;
+    }
 
 }

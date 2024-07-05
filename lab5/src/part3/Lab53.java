@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package part1;
+package part3;
 
 import java.util.Scanner;
 
@@ -11,12 +11,12 @@ import java.util.Scanner;
  *
  * @author DELL
  */
-public class Lab51 {
+public class Lab53 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public  void main(String a[] ) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("1. Test f1()");
@@ -35,10 +35,12 @@ public class Lab51 {
         }
         if (choice == 2){
             MyPolymorphism obj = new MyPolymorphism();
-            String output = obj.f2(str);
-            System.out.println(output);
+            obj.f2(str);
+            
         }
             
        }
+    }
     
-}
+    
+

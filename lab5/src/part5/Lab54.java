@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package part1;
+package lab5.pkg4;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author DELL
  */
-public class Lab51 {
+public class Lab54 {
 
     /**
      * @param args the command line arguments
@@ -21,24 +21,46 @@ public class Lab51 {
 
         System.out.println("1. Test f1()");
         System.out.println("2. Test f2()");
-        System.out.print("Enter TC (1 or 2): ");
-        int choice = scanner.nextInt();
-        scanner.nextLine(); 
+        boolean cont = false;
+        int choice = 0;
+        
+        do{
+            
+           try{
+               
+               Scanner sc = new Scanner(System.in);
+               System.out.println("Enter TC (1 or 2): ");
+               choice = sc.nextInt();
+               if (choice < 1 || choice > 2){
+                   throw new Exception();
+            }
+               cont = false;
+        }
+            catch(Exception e){
+               System.out.println("Invalid choice, please enter again");
+               cont = true;
+        }
+        
+            }while ( cont );
+        
 
         System.out.println("Enter a string:");
         String str = scanner.nextLine();
         
         if (choice == 1){
             MyPolymorphism obj = new MyPolymorphism();
-            int output = obj.f1(str);
-            System.out.println(output);
+            obj.f1(str);
+            
         }
         if (choice == 2){
             MyPolymorphism obj = new MyPolymorphism();
-            String output = obj.f2(str);
-            System.out.println(output);
+            int result = obj.f2(str);
+            System.out.println(result);
+            
         }
             
        }
+    }
     
-}
+    
+
